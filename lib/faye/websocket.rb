@@ -7,7 +7,7 @@
 require 'forwardable'
 require 'stringio'
 require 'uri'
-require 'eventmachine'
+require 'eventmachine-le'
 require 'websocket/driver'
 
 module Faye

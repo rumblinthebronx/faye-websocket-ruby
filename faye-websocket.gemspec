@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
-  s.name              = 'faye-websocket'
-  s.version           = '0.7.2'
+  s.name              = 'faye-tls1-websocket'
+  s.version           = '0.8.0'
   s.summary           = 'Standards-compliant WebSocket server and client'
   s.author            = 'James Coglan'
   s.email             = 'jcoglan@gmail.com'
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
             Dir.glob('lib/**/*.rb') +
             Dir.glob('examples/**/*')
 
-  s.add_dependency 'eventmachine', '>= 0.12.0'
+  s.add_dependency 'eventmachine-le'
   s.add_dependency 'websocket-driver', '>= 0.3.1'
 
   s.add_development_dependency 'progressbar'

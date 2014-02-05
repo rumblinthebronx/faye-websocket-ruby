@@ -35,7 +35,7 @@ module Faye
     private
 
       def on_connect
-        @stream.start_tls if @uri.scheme == 'wss'
+        @stream.start_tls(:ssl_version => :TLSv1) if @uri.scheme == 'wss'
         @driver.start
       end
 
